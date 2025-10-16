@@ -19,5 +19,5 @@ int32_t main() {
 ./compile.sh
 
 #!/usr/bin/bash
-g++ "${1}.cpp" -o "{$1}" -Dbruh -std=c++20 -O2 -Wall -fsanitize=undefined,address
+g++ "${1}.cpp" -o "{$1}" -DBRUH -std=c++20 -Wall -fsanitize=undefined,address
 */
