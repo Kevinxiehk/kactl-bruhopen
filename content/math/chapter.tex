@@ -157,7 +157,7 @@ Then there is a transition matrix $\mathbf{P} = (p_{ij})$, with $p_{ij} = \Pr(X_
 and $\mathbf{p}^{(n)} = \mathbf P^n \mathbf p^{(0)}$ is the probability distribution for $X_n$ (i.e., $p^{(n)}_i = \Pr(X_n = i)$),
 where $\mathbf{p}^{(0)}$ is the initial distribution.
 
-% \subsubsection{Stationary distribution}
+\subsubsection{Stationary distribution}
 $\mathbf{\pi}$ is a stationary distribution if $\mathbf{\pi} = \mathbf{\pi P}$.
 If the Markov chain is \emph{irreducible} (it is possible to get to any state from any state),
 then $\pi_i = \frac{1}{\mathbb{E}(T_i)}$ where $\mathbb{E}(T_i)$  is the expected time between two visits in state $i$.
@@ -165,12 +165,12 @@ $\pi_j/\pi_i$ is the expected number of visits in state $j$ between two visits i
 
 For a connected, undirected and non-bipartite graph, where the transition probability is uniform among all neighbors, $\pi_i$ is proportional to node $i$'s degree.
 
-% \subsubsection{Ergodicity}
+\subsubsection{Ergodicity}
 A Markov chain is \emph{ergodic} if the asymptotic distribution is independent of the initial distribution.
 A finite Markov chain is ergodic iff it is irreducible and \emph{aperiodic} (i.e., the gcd of cycle lengths is 1).
 $\lim_{k\rightarrow\infty}\mathbf{P}^k = \mathbf{1}\pi$.
 
-% \subsubsection{Absorption}
+\subsubsection{Absorption}
 A Markov chain is an A-chain if the states can be partitioned into two sets $\mathbf{A}$ and $\mathbf{G}$, such that all states in $\mathbf{A}$ are absorbing ($p_{ii}=1$), and all states in $\mathbf{G}$ leads to an absorbing state in $\mathbf{A}$.
 The probability for absorption in state $i\in\mathbf{A}$, when the initial state is $j$, is $a_{ij} = p_{ij}+\sum_{k\in\mathbf{G}} a_{ik}p_{kj}$.
 The expected time until absorption, when the initial state is $i$, is $t_i = 1+\sum_{k\in\mathbf{G}}p_{ki}t_k$.

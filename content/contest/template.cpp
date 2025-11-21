@@ -10,14 +10,11 @@ typedef long long ll;
 typedef pair<int, int> pii;
 typedef vector<int> vi;
 
-int32_t main() {
-	cin.tie(0)->sync_with_stdio(0);
-	cin.exceptions(cin.failbit);
+void solve() {
+	
 }
 
-/*
-./compile.sh
-
-#!/usr/bin/bash
-g++ "${1}.cpp" -o "{$1}" -DBRUH -std=c++20 -Wall -fsanitize=undefined,address
-*/
+int32_t main() {
+    cin.tie(0)->sync_with_stdio(0);
+    solve();
+}

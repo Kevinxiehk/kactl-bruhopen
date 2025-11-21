@@ -47,7 +47,17 @@
 \section{Estimates}
 	$\sum_{d|n} d = O(n \log \log n)$.
 
-	The number of divisors of $n$ is at most around 100 for $n < 5e4$, 500 for $n < 1e7$, 2000 for $n < 1e10$, 200\,000 for $n < 1e19$.
+	\subsection{Highly Composite numbers}
+	Maximum number of divisors for numbers below $n$.
+	$d(n)$ is at most around 100 for $n < 5e4$, 500 for $n < 1e7$, 2000 for $n < 1e10$, 200\,000 for $n < 1e19$.
+	\begin{center}
+		\begin{tabular}{c|c@{\ }c@{\ }c@{\ }c@{\ }c@{\ }c@{\ }c@{\ }c}
+			$\log_{10}n<$ & 3 & 5 & 6 & 8 & 9 & 12 & 15 & 18   \\ \hline
+			$d(n)<$       & 32 & 128 & 240 & 768 & 1344 & 6720 & 26880 & 103680 \\
+		\end{tabular}
+	\end{center}
+
+	The following numbers are highly composite: 840, 83160, 720720, 73513440, 735134400, 963761198400, 866421317361600, 897612484786617600
 
 \section{Mobius Function}
 \[
