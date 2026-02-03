@@ -1,6 +1,7 @@
-#include <bits/stdc++.h>
+#include <bits/allocator.h>
 #pragma GCC optimize("O3,unroll-loops")
 #pragma GCC target("avx2,bmi,bmi2,lzcnt,popcnt")
+#include <bits/stdc++.h>
 using namespace std;
 
 #define rep(i, a, b) for(int i = a; i < (b); ++i)
@@ -13,7 +14,6 @@ typedef vector<int> vi;
 void solve() {
 	
 }
-
 int32_t main() {
     cin.tie(0)->sync_with_stdio(0);
     solve();
